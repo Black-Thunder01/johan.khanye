@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lobster" />
+
+<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <title>About</title>
+  <style>
+  body{
+    background: #ccc;
+    font-family: 'lato';
+    text-align: center;
+  }
+  .content{
+    margin: 0 auto;
+    max-width: 90%;
+    display: grid;
+    background: #bbb;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(11, minmax(50px, auto));
+    grid-gap: 10px;
+    text-align: center;
+    grid-template-areas:
+    "head head head head"
+    "one one one one"
+    "one one one one"
+    "two two two two"
+    "two two two two"
+    "two two two two"
+    "two two two two"
+    "two two two two"
+    "three three three three"
+    "three three three three"
+    "footer footer footer footer";
+  }
+  @media screen and (min-width: 600px){
+    .content{
+      margin: 0 auto;
+      max-width: 90%;
+      display: grid;
+      background: #bbb;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(11, minmax(50px, auto));
+      grid-gap: 10px;
+      text-align: center;
+      grid-template-areas:
+      "head head head head"
+      "one one two two"
+      "one one two two"
+      "one one two two"
+      "one one two two"
+      "one one two two"
+      "one one two two"
+      "one one two two"
+      "three three three three"
+      "three three three three"
+      "footer footer footer footer";
+    }
+  }
+
+  .content div{
+    background: white;
+    padding: 8px;
+    font-style: italic;
+  }
+  .content div{
+    text-align: center;
+    font-weight: bold;
+  }
+  .head{
+    grid-area: head;
+  }
+  #one{
+    grid-area: one;
+  }
+  #two{
+    grid-area: two;
+    background-image: url('paint.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-y;
+    font-size: 20px;
+  }
+  #three{
+    grid-area: three;
+  }
+  .foot{
+    grid-area: footer;
+    text-align: center;
+  }
+  h1{
+    font-weight: bold;
+  }
+  .aboutdiv{
+    background-color: blue;
+  }
+  .johan{
+    color: #ff4545;
+  }
+/*tab styling*/
+.tabs {
+width: auto;
+margin: 5em auto;
+background-color: #09F;
+border-radius: 5px 5px 5px 5px;
+}
+ul#tabs-nav {
+list-style: none;
+margin: 0;
+padding: 5px;
+overflow: auto;
+}
+ul#tabs-nav li {
+float: right;
+font-weight: bold;
+margin-right: 2px;
+padding: 8px 10px;
+border-radius: 5px 5px 5px 5px;
+}
+ul#tabs-nav li:hover,
+ul#tabs-nav li.active {
+background-color: #08E;
+}
+#tabs-nav li a {
+text-decoration: none;
+color: #FFF;
+}
+.tab-content {
+padding: 5px;
+border: 5px solid #09F;
+background-color: #FFF;
+}
+// Show the first tab and hide the rest
+$('#tabs-nav li:first-child').addClass('active');
+$('.tab-content').hide();
+$('.tab-content:first').show();
+
+// Click function
+$('#tabs-nav li').click(function(){
+$('#tabs-nav li').removeClass('active');
+$(this).addClass('active');
+$('.tab-content').hide();
+
+var activeTab = $(this).find('a').attr('href');
+$(activeTab).fadeIn();
+return false;
+});
+h1:hover{
+  text-decoration: line-through;
+}
+.photo{
+  font-weight: bold;
+  color: blue;
+  font-style: italic;
+}
+  </style>
+</head>
+  <body>
+    <!-- Tab tab tab tab tab tab tab tab tab tab tab--->
+    <div class="tabs" class="responsive">
+      <ul id="tabs-nav">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul> <!-- END tabs-nav -->
+    </div>
+    <!-- Tab tab tab tab tab tab tab tab tab tab tab--->
+    <div class="content responsive">
+
+      <div class="head" id="head">
+        <div class='aboutdiv'><h1>About</h1></div>
+        <p> I am <span class="johan">Johan Khanye</span>, I am a creative, innovative, nerdy coder that loves to learn, collaborate and create <i class="fa fa-heart"></i>.
+      </div>
+
+      <div class="one" id="one">
+      <h3><strong>Responsivity</strong></h3>
+      <p>My highest priority!, websites of all things they have to be responsive then the rest will follow.</p>
+      <h3><strong>Fast</strong></h3>
+      <p> Your business doesn't have to wait for me but I'll wait for your business' prefered design</p>
+      <h3><strong>Dynamic</strong></h3>
+      <p> Your bussiness' website doesn't need a static, boring website but it needs a lively websites which is what I do best.</p>
+      </div>
+
+      <div class="two" id="two">
+      </div>
+
+      <div class='three' id="three">
+        <h3><strong>Who's Johan!?</strong></h3>
+        <p>I'm a front-end developer and a Data Scientist student at <span class="johan">Umuzi Academy</span> in Gauteng, South Africa. I have a phobia for <span class="johan">Apathetic</span> website, although I'm great in calculations and Statistics I'm all you can ask for in front-end web development.</p></br>
+
+        <p>I'm <span class="photo">Adobe Photoshop, Adobe Illustrator</span> literate. I create responsive,intuitive and Dynamic sites, which is what you definitely for your iShishini(business).</p>
+      </div>
+
+      <div class="foot" id="foot">
+        <footer>&copy; 2018 Johan khanye </br> Coded by Johan Khanye </footer>
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

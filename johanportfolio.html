@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<head>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lobster">
+        <href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+  <title>Portfolio.</title>
+  <style>
+  body{
+    background: #bbb;
+    font-family: 'Nunito semibold';
+    text-align: center;
+  }
+
+.content{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(13, minmax(150px, auto));
+    max-width: 80%;
+    grid-gap: 10px;
+    margin: 0 auto;
+    grid-template-areas:
+    "face face face face"
+    "face face face face"
+    "face face face face"
+    "sea sea sea sea"
+    "pink pink vase vase"
+    "pink pink vase vase"
+    "white white apple apple"
+    "white white apple apple"
+    "yellow yellow phone phone"
+    "yellow yellow phone phone"
+    "bean bean eiffel eiffel"
+    "bean bean eiffel eiffel"
+    "mount mount mount mount";
+  }
+  .content div{
+  background: white;
+  padding: 30px;
+  }
+.face{
+  grid-area: face;
+}
+.mount{
+  grid-area: mount;
+}
+.pink{
+  grid-area: pink;
+}
+.white{
+  grid-area: white;
+}
+.apple{
+  grid-area: apple;
+}
+.vase{
+  grid-area: vase;
+}
+#seven{
+  grid-area: bean;
+}
+.phone{
+  grid-area: phone;
+}
+#nine{
+  grid-area: sea;
+
+}
+.eiffel{
+  grid-area: eiffel;
+}
+.yellow{
+  grid-area: yellow;
+}
+.footer{
+  grid-area: footer;
+}
+  h{
+  font-family: 'Cormorant Garamond';
+  font-weight: bold;
+  font-style: italic;
+  color: black;
+  text-decoration: underline double;
+  }
+  p{
+  font-size: 20px;
+  font-family: times;
+  font-weight: bold;
+  font-style: italic;
+  }
+  .content{
+  padding-top: 20px;
+  }
+  .content div{
+    text-align: center;
+    font-weight: bold;
+  }
+  h1{
+  font-family: 'Cormorant Garamond';
+  font-weight: bold;
+  font-style: italic;
+  color: black;
+  padding-bottom: 5px;
+  }
+  h1:hover{
+    text-decoration: underline;
+  }
+  #one{
+    background: url('mount.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #two{
+    background: url('forest.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #three{
+    background: url('pink.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #four{
+    background: url('laptop.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #five{
+  background: url('think.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+  #six{
+    background: url('pot.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #seven{
+  background: url('bean.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+  #eight{
+    background: url('phone.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #nine{
+    background: url('oceanflower.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #ten{
+  background: url('pari.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+  #eleven{
+    background: url('yellow.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #twelve{
+    background: url('dblsun.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .jojopic{
+    width: 50%;
+    height: auto;
+    border-color: green;
+    border-style: solid;
+    border-radius: 100%;
+  }
+  .twelve{
+    grid-column: 1/5;
+    padding: auto;
+    background-image: url('dblsun.jpg');
+  }
+
+@media screen and (min-width: 768px){
+      .content{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, minmax(150px, auto));
+        max-width: 1000px;
+        grid-gap: 12px;
+        margin: 0 auto;
+        grid-template-areas:
+        "face face mount pink"
+        "face face mount white"
+        "apple vase bean phone"
+        "sea eiffel eiffel yellow"
+        "footer footer footer footer";
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="responsive">
+    <div class="content" class="responsive">
+
+      <div class="face" id="one" class="responsive">
+        <center>
+        <image src='jojo.jpg' class='jojopic' class="responsive">
+        <h1> Johan Khanye</h1>
+        </center>
+      </div>
+
+      <div  class="mount" id="two" class="responsive">
+      </div>
+
+      <div class="pink" id="three" class="responsive">
+        <a href='projects'><h1>Projects</h1></a>
+        <p>These are the projects I was involved in<p>
+      </div>
+
+      <div class="white" id="four" class="responsive">
+
+      </div>
+
+      <div class="apple" id="five" class="responsive">
+      </div>
+
+      <div class="vase" id="six" class="responsive">
+        <a href="currentproj"><h1>Current Projects</h1></a>
+        <p>These are Johan's current projects.</p>
+      </div>
+
+      <div clas="bean" id="seven" class="responsive">
+      </div>
+
+      <div class='phone' id="eight" class="responsive">
+        <a href='contact.html'><h1 class='contact'>Contact</h1></a>
+        <p>Contact Johan Khanye.</p>
+      </div>
+
+      <div clas="sea" id='nine' class="responsive">
+        <a href='about.html'>
+        <h1>About</h1></a>
+        <p> More About Johan Khanye.</p>
+      </div>
+
+      <div class="eiffel" id="ten" class="responsive">
+      </div>
+
+      <div class="yellow" id='eleven' class="responsive">
+        <a href="resume"><h1>Resume</h1></a>
+        <p>This is my resume.</p>
+      </div>
+    </div>
+  </div>
+</body>

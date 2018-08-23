@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<head>
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lobster" />
+
+
+  <title>Johan Khanye</title>
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+  <style>
+  body{
+    color: #fff;
+    font-family: 'Nunito semibold';
+    text-align: center;
+    background-image: url('johan.jpg');
+  }
+  .index{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, minmax(50px, auto));
+    max-width: 80%;
+    grid-row-gap: 10px;
+    grid-column-gap: 5px;
+    margin: 0 auto;
+    grid-template-areas:
+    ". . . . . . . . "
+    ". . one one one one . . "
+    ". . one one one one . . "
+    ". . . two two two . . "
+    ". . . . . . . .  "
+    ". . . . . . . .";
+  }
+  @media screen and (min-width: 700px){
+    .index{
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(8, minmax(50px, auto));
+      max-width: 960px;
+      grid-row-gap: 10px;
+      grid-column-gap: 5px;
+      margin: 0 auto;
+      grid-template-areas:
+      ". . . . . . . . "
+      ". . . . . . . . "
+      ". . . . . . . . "
+      ". . . . . . . . "
+      ". . one one one one . . "
+      ". . one one one one . . "
+      ". . one one one one . . "
+      ". . . two two two . . ";
+    }
+  }
+  .portbtn{
+    background: #ff4545;
+    border-style: solid;
+    border-color: white;
+    border-radius: 25px;
+    width: 170px;
+    color: black;
+    font-family: 'Times';
+    height: 40px;
+    font-size: 18px;
+  }
+  .portbtn:hover{
+    background: #bbb;
+    border-style: solid;
+    border-color: white;
+    border-radius: 25px;
+    width: 170px;
+    color: black;
+    font-family: 'Times'
+
+  }
+  .one{
+    grid-area: one;
+
+  }
+  .two{
+    grid-area: two;
+  }
+  p{
+    font-family: Times;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: bold;
+  }
+  h1{
+    font-style: italic;
+    font-weight: bold;
+    color: #ff4545;
+    font-family: 'Cormorant Garamond';
+  }
+  .johan{
+    font-family: 'Cormorant Garamond';
+    color: #ff4545;
+    font-size: 35px;
+    font-weight: bolder;
+
+  }
+  </style>
+</head>
+<body>
+  <div class='responsive'>
+      <div class='index'>
+        <div class="one">
+          <h1>Bonjour & Bienvenue</h1>
+          <p>Bonjour et Bienvenue à mon portfolio</p>
+          <p>My name is <span class="johan">Johan Khanye</span> and I am a UX/UI designer and a Data scientist.
+          </div>
+          <div class='two'>
+          <a href ='johanportfolio.html'>
+            <button class='portbtn'>Go to portfolio</button>
+          </a>
+        </div>
+        </div>
+      </div>
+  </div>
+</body>
